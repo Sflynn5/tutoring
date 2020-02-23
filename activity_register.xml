@@ -43,7 +43,7 @@
             android:id="@+id/tvCreateProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:gravity="center_horizontal"
             android:text="Create Your Profile"
             android:textColor="@color/colorPrimaryDark"
@@ -54,7 +54,7 @@
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:ems="10"
             android:hint="Full Name"
             android:inputType="textPersonName" />
@@ -76,12 +76,12 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/etSubject"
+            android:id="@+id/etPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Subjects of Interest"
-            android:inputType="textPersonName" />
+            android:hint="Phone number"
+            android:inputType="phone" />
 
         <EditText
             android:id="@+id/etEmail"
@@ -112,7 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/buttons"
             android:text="Register"
