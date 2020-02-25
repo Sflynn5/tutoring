@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     tools:context=".Register">
 
     <ProgressBar
@@ -128,7 +128,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/buttons"
             android:text="Register"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
