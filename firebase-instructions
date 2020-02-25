@@ -1,0 +1,16 @@
+INSTRUCTIONS FOR ADDING FIREBASE TO YOUR ANDROID ACCOUNT:
+
+
+email:	testuser.appdev@gmail.com
+password:	headphones@12345
+
+
+
+1.Compare you build.gradle files both(app module and package module) with the gradle files I upload,add any depencency you don't have in your file.
+
+2.Drag and drop the google-services.json file to your package which wil have a name like com.username.myapp
+
+3.Goto Tools>Firebase>authentications and make sure you are connected.
+  Goto Tools>Firebase>realtime databases and make sure you are connected.
+
+
