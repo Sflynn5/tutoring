@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".TutorTutee">
 
@@ -39,7 +39,7 @@
         android:layout_weight="1"
         android:background="@drawable/buttons"
         android:text="Login"
-        android:textColor="#FFFFFFFF"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
 
