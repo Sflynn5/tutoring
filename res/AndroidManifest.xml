@@ -20,6 +20,10 @@
             android:parentActivityName=".TutorTutee" />
         <activity android:name=".Register"
             android:parentActivityName=".TutorTutee"/>
+        <activity android:name=".tutorView"
+            android:parentActivityName=".Login"/>
+        <activity android:name=".tutorPost"
+            android:parentActivityName=".tutorView"/>
     </application>
 
 </manifest>
