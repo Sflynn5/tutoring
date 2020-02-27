@@ -50,11 +50,26 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/default_profile_picture3"
+            android:onClick="updatePhoto"/> <!--change here-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Upload your profile photo"
+            android:textStyle="italic" />
+
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Full Name"
             android:inputType="textPersonName" />
