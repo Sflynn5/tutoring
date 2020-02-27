@@ -1,68 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.MainActivity">
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="237dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="448dp"
-        android:text="Login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.MainActivity">
 
-    <Button
-        android:id="@+id/button_register"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="235dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="20dp"
-        android:text="new user? cLICK to Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.579"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:visibility="visible"
+    app:isAnimated="true"
+    app:heading="Laura Pavlosky&#10;Subjects: Mathematics and Computer Science"
+    app:isExpanded="true"
+    app:isPartitioned="true">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="57dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Enter email"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="About Me: Hi, my name is Laura. I'm a mathematics major and a computer science minor. I have taken the following courses at Trinity and am available for tutoring in any of these courses as well as general help in mathematics and computer science. &#10;Courses: Partial Differential Equations, Software Design Analysis, Systems Analysis and Design.&#10;Email: pavloskl@tcd.ie" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/btn_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv1"
+            android:background="#00FFFFFF"
+            android:src="@mipmap/ic_thumb_up_round"
+            android:text="Test Button" />
+
+
+</com.riyagayasen.easyaccordion.AccordionView>
+
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        app:isAnimated="true"
+        app:heading="Maddie McGlinchey&#10;Subjects: Psychology, English, History"
+        app:isExpanded="true"
+        app:isPartitioned="true">
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Me: Hi, my name is Maddie. I'm a psychology major. I have taken the following courses at Trinity and am available for tutoring in any of these courses as well as general help in psychology, english, and history.&#10;Courses: Human Reasoning, Reading Ireland, Europe, Power and Society 1500-1800.&#10;Email: mmcglinc@tcd.ie" />
+
+        <ImageButton
+            android:id="@+id/button_2"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv2"
+            android:src="@mipmap/ic_thumb_up_round"
+            android:text="Test Button" />
+
+
+    </com.riyagayasen.easyaccordion.AccordionView>
+
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="205dp" />
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        app:isAnimated="true"
+        app:heading="Jessica Grodovich&#10;Subjects: History"
+        app:isExpanded="true"
+        app:isPartitioned="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Me: Hi, my name is Jess. I'm a history major. I have taken the following courses at Trinity and am available for tutoring in any of these courses as well as general help in history.&#10;Courses: Life in Modern Ireland, War and Peace in Europe 1900-present &#10;Email: grodovic@bc.edu" />
+
+        <ImageButton
+            android:id="@+id/button_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv3"
+            android:src="@mipmap/ic_thumb_up_round"
+            android:text="Test Button" />
+
+
+
+    </com.riyagayasen.easyaccordion.AccordionView>
+
+
+</LinearLayout>
+</ScrollView>
