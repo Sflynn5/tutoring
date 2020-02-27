@@ -24,6 +24,8 @@
             android:parentActivityName=".Login"/>
         <activity android:name=".tutorPost"
             android:parentActivityName=".tutorView"/>
+        <activity android:name=".studentView"
+            android:parentActivityName=".Login"/>
     </application>
 
 </manifest>
