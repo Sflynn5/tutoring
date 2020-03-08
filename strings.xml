@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="Subjects">
+        <item>All Subjects</item>
+        <item>Math</item>
+        <item>History</item>
+        <item>English</item>
+        <item>Computer Science</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Law</item>
+        <item>Philosophy</item>
+        <item>Languages</item>
+        <item>Economics</item>
+    </string-array>
+
+    <string-array name="UpVotes">
+        <item>All Up Votes</item>
+        <item>10+ Up Votes</item>
+        <item>50+ Up Votes</item>
+        <item>100+ Up Votes</item>
+    </string-array>
+
+    <string-array name="CourseLevel">
+        <item>All Course Levels</item>
+        <item>Undergraduate</item>
+        <item>Postgraduate</item>
+    </string-array>
+</resources>
